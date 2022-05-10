@@ -1,0 +1,29 @@
+*,
+:after,
+:before {
+    font-family: Roboto;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+@import './abstracts/colors.scss';
+@import './abstracts/others.scss';
+@import '../../containers/Header/style.scss';
+@import '../../containers/Footer/style.scss';
+@import '../../components/Navbar/style.scss';
+@import '../../sections/Home/style.scss';
+
+.primary-btn {
+    text-decoration: none;
+    color: unset;
+    border-radius: 8px;
+    border: 2px solid $lightorange;
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    transition: 300ms ease-out;
+    &:hover {
+        background-color: $lightorange;
+    }
+}

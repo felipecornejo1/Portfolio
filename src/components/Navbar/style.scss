@@ -1,0 +1,85 @@
+.navbar {
+    @include flexCenter(row);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 50px;
+    padding-bottom: 100px;
+    height: 8vh;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    background-image: linear-gradient(to bottom, 
+    rgba(23, 0, 34, 1) 0%, 
+    rgba(23, 0, 34, 1) 60%, 
+    rgba(255, 255, 255, 0)
+100%);    a {
+        color: #fff;
+        margin: 0 10px;
+        font-family: Work Sans;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-decoration: none;
+        transition: 300ms ease-in-out;
+        &:hover {
+            color: $lightorange;
+        }
+    }
+    button {
+        @include noFormatBtn();
+        font-size: 1.2rem;
+        font-family: Work Sans;
+        font-weight: 400;
+        color: #fff;
+        padding: 2px 15px;
+        border: 2px solid $lightorange;
+        border-radius: 8px;
+        text-transform: uppercase;
+        transition: 300ms ease-out;
+        &:hover {
+            background-color: $lightorange;
+        }
+    }
+    .navbar__links {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+    }
+    .navbar__logo {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+        text-align: center;
+        a {
+            font-size: 3rem;
+            font-family: Courgette;
+            transition: 300ms ease-out;
+            cursor: pointer;
+            &:hover {
+                color: $lightorange;
+            }
+        }
+    }
+    // Small Laptops
+    @media screen and (max-width: 1500px) {
+        .navbar__logo {
+            text-align: left;
+            margin-left: 50px;
+        }
+    }
+    //Tablet
+    @media screen and (max-width: 1200px) {
+
+    }
+    // Low Resolution Tablets
+    @media screen and (max-width: 800px) {
+        .navbar__links {
+            display: none;
+        }
+    }
+    // Mobile
+    @media screen and (max-width: 500px) {
+        
+    }
+}
