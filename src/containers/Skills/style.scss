@@ -1,0 +1,40 @@
+#skills {
+    @import '../../components/SkillsList/style.scss';
+    background-color: $darkestpurple;
+    h2 {
+        margin: 50px 0;
+        width: 100%;
+        max-width: 600px;
+        color: #fff;
+    }
+    .skills__ctn {
+        @include flexCenter(row);
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+    .skills__backend {
+        > .skills__list {
+            background-color: rgba($color: $orange, $alpha: 0.5);
+        }
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .skills__ctn {
+        flex-direction: column !important;
+        .skills__list {
+            flex: 1 !important;
+            margin: 10px auto !important;
+            height: 500px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .skills__ctn {
+        .skills__list {
+            height: 100vw !important;
+        }
+    }
+}

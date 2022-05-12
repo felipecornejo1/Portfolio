@@ -1,19 +1,30 @@
 *,
 :after,
 :before {
-    font-family: Roboto;
+    font-family: Work Sans;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
 }
 
 @import './abstracts/colors.scss';
 @import './abstracts/others.scss';
 @import '../../containers/Header/style.scss';
+@import '../../containers/Portfolio/style.scss';
+@import '../../containers/Skills/style.scss';
+@import '../../containers/Contact/style.scss';
 @import '../../containers/Footer/style.scss';
 @import '../../components/Navbar/style.scss';
 @import '../../sections/Home/style.scss';
+
+section {
+    padding: 4rem;
+    h1 {
+        color: #fff;
+        font-size: 4rem;
+        font-weight: 800;
+    }
+}
 
 .primary-btn {
     text-decoration: none;
@@ -25,5 +36,14 @@
     transition: 300ms ease-out;
     &:hover {
         background-color: $lightorange;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        padding: 2rem;
+        h1 {
+            font-size: 2rem;
+        }
     }
 }

@@ -1,0 +1,33 @@
+.projects__message-ctn {
+    background: radial-gradient(72.4% 11967.48% at 27.6% 40.18%, #7F5BE7 0%, #A95BE7 100%);
+    padding: 30px 70px;
+    p {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        width: 80%;
+        span {
+            font-weight: 800;
+        }
+    }
+}
+
+#projects {
+    @import '../../components/Project/style.scss';
+
+    background-color: #240046;
+    
+
+    .projects__showcase {
+        padding-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .projects__message-ctn {
+        p {
+            width: fit-content;
+            font-size: 1.5rem !important;
+        }
+    }
+}

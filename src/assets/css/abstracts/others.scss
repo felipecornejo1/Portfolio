@@ -11,3 +11,17 @@
     border: none;
     cursor: pointer;
 }
+
+@mixin anchorBtn() {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 2px 15px;
+    border: 2px solid $lightorange;
+    border-radius: 8px;
+    transition: 300ms ease-out;
+    text-decoration: none;
+    &:hover {
+        background-color: $lightorange;
+    }
+}

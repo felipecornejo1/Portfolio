@@ -1,11 +1,12 @@
-import React from "react";
-import { Navbar } from '../../components/index';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import React from "react"
+import {Link} from 'react-scroll'
+import { Navbar } from '../../components/index'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 function Header() {
     return(
-        <header>
+        <header id="header">
             < Navbar />
             <div className="header__circle">
                 <div className="header__presentation">
@@ -18,9 +19,9 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <a href="#" class="scroll-down" address="true"></a>
+            <Link to="welcome" className="scroll-down" address="true" spy={true} smooth={true} offset={-100} duration={500}></Link>
         </header>
-    );
+    )
 }
 
-export default Header;
+export default Header
