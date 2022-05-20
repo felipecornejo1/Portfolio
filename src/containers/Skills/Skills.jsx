@@ -16,13 +16,13 @@ function Skills() {
                 <div className="skills__backend" aos-data="fade-right">
                     <SkillsList
                         title="Backend"
-                        skills={['Node.js', 'Express', 'REST APIs', 'mySQL', 'Sequelize']}
+                        skills={['Node.js', 'Express', 'REST APIs', 'mySQL', 'Sequelize', 'TypeScript']}
                     />
                 </div>
                 <div className="skills__others" aos-data="fade-right">
                     <SkillsList
                         title="Others"
-                        skills={['Agile', 'Scrum', 'Git', 'OOP']}
+                        skills={['Agile', 'Scrum', 'DevOps', 'Git', 'OOP', 'JWT']}
                     />
                 </div>
             </div>

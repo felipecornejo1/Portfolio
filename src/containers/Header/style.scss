@@ -74,15 +74,6 @@ header {
     }
 }
 
-@keyframes glow {
-    from {
-      text-shadow: 0 0 20px #2d9da9;
-    }
-    to {
-      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
-    }
-  }
-
 // Scroll Down
 .scroll-down {
     opacity: 1;
@@ -201,6 +192,15 @@ header {
         }
         h2 {
             font-size: 10vw !important;
+        }
+        .header__presentation-contact-btns {
+            a {
+                font-size: 20px !important;
+                height: fit-content !important;
+            }
+            svg {
+                font-size: 2.3rem;
+            }
         }
     }
 }

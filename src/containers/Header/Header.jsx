@@ -13,9 +13,9 @@ function Header() {
                     <h1>Felipe Cornejo</h1>
                     <h2>Fullstack Web Developer</h2>
                     <div className="header__presentation-contact-btns">
-                        <a href="" className="primary-btn">Contact me</a>
-                        <a href=""><LinkedInIcon fontSize="inherit"></LinkedInIcon></a>
-                        <a href=""><GitHubIcon fontSize="inherit"></GitHubIcon></a>
+                        <Link to="contact" className="primary-btn" activeClass="active" spy={true} smooth={true} offset={-90} duration={500}> Contact Me </Link>
+                        <a href="https://linkedin.com/in/felipecornejo1" target='_blank' rel="noreferrer"><LinkedInIcon fontSize="inherit"></LinkedInIcon></a>
+                        <a href="https://github.com/felipecornejo1" target='_blank' rel="noreferrer"><GitHubIcon fontSize="inherit"></GitHubIcon></a>
                     </div>
                 </div>
             </div>

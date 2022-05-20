@@ -12,8 +12,8 @@
     rgba(23, 0, 34, 1) 0%, 
     rgba(23, 0, 34, 1) 60%, 
     rgba(255, 255, 255, 0)
-100%);    
-    a {
+100%);
+    .navbar__main-link {
         color: #fff;
         margin: 0 10px;
         font-family: Work Sans;
@@ -34,6 +34,9 @@
         @include noFormatBtn();
         @include anchorBtn();
         text-transform: uppercase;
+        &.active {
+            border: none;
+        }
     }
     .navbar__links {
         font-size: 1.2rem;

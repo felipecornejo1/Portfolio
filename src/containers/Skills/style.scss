@@ -15,26 +15,17 @@
     }
     .skills__backend {
         > .skills__list {
-            background-color: rgba($color: $orange, $alpha: 0.5);
+            background-color: rgba($color: $darkpurple, $alpha: 0.5);
         }
     }
 }
 
 @media screen and (max-width: 1285px) {
     .skills__ctn {
-        flex-direction: column !important;
+        display: block !important;
         .skills__list {
-            flex: 1 !important;
-            margin: 10px auto !important;
-            height: 500px !important;
-        }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .skills__ctn {
-        .skills__list {
-            height: 100vw !important;
+            margin: 70px auto !important;
+            height: fit-content !important;
         }
     }
 }
