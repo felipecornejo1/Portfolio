@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%
+}
+
 @import './abstracts/colors.scss';
 @import './abstracts/others.scss';
 @import '../../containers/Header/style.scss';

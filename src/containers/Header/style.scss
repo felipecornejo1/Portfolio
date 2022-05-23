@@ -1,6 +1,7 @@
 header {
     position: relative;
-    height: -webkit-fill-available;
+    height: 100vh;
+    min-height: -webkit-fill-available;
     background: url('../../../public/img/Whangaehu-crop.png'), $darkestpurple;
     background-size: cover;
     color: #fff;

@@ -8,9 +8,14 @@
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 header {
   position: relative;
-  height: -webkit-fill-available;
+  height: 100vh;
+  min-height: -webkit-fill-available;
   background: url("../../../public/img/Whangaehu-crop.png"), #170022;
   background-size: cover;
   color: #fff;
