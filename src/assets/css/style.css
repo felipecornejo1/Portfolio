@@ -10,8 +10,7 @@
 
 header {
   position: relative;
-  height: 100vh;
-  max-height: 100vh;
+  height: -webkit-fill-available;
   background: url("../../../public/img/Whangaehu-crop.png"), #170022;
   background-size: cover;
   color: #fff;
