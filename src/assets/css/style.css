@@ -568,6 +568,85 @@ header .header__presentation .header__presentation-contact-btns svg:hover {
   background-color: #240046;
 }
 
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(23, 0, 34, 0.5);
+  width: 80vw;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 3rem;
+}
+
+#contact form input, #contact form textarea {
+  background-color: #170022;
+  height: 70px;
+  width: 100%;
+  margin: 1rem;
+  border: none;
+  padding: 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#contact form input:-webkit-autofill, #contact form input:-webkit-autofill:hover, #contact form input:-webkit-autofill:focus, #contact form input:-webkit-autofill:active, #contact form textarea:-webkit-autofill, #contact form textarea:-webkit-autofill:hover, #contact form textarea:-webkit-autofill:focus, #contact form textarea:-webkit-autofill:active {
+  background-color: black !important;
+}
+
+#contact form textarea {
+  height: 200px;
+}
+
+#contact form button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  padding: 10px 50px;
+  font-size: 1.2rem;
+  background-color: #170022;
+  color: #fff;
+  border-radius: 8px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+#contact form button:hover {
+  background-color: #7b2cbf;
+}
+
+#contact form input:-webkit-autofill,
+#contact form input:-webkit-autofill:hover,
+#contact form input:-webkit-autofill:focus,
+#contact form textarea:-webkit-autofill,
+#contact form textarea:-webkit-autofill:hover,
+#contact form textarea:-webkit-autofill:focus,
+#contact form select:-webkit-autofill,
+#contact form select:-webkit-autofill:hover,
+#contact form select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #170022 inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
