@@ -607,6 +607,8 @@ header .header__presentation .header__presentation-contact-btns svg:hover {
 
 #contact form textarea {
   height: 200px;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 #contact form button {
@@ -643,6 +645,7 @@ header .header__presentation .header__presentation-contact-btns svg:hover {
 #contact form select:-webkit-autofill:hover,
 #contact form select:-webkit-autofill:focus {
   -webkit-text-fill-color: #fff;
+  box-shadow: 0 0 0px 1000px #170022 inset;
   -webkit-box-shadow: 0 0 0px 1000px #170022 inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;

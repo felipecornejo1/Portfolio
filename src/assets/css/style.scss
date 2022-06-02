@@ -1,14 +1,15 @@
 *,
 :after,
 :before {
-    font-family: Work Sans;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  font-family: Work Sans;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-html, body {
-    height: 100%
+html,
+body {
+  height: 100%;
 }
 
 @import './abstracts/colors.scss';
@@ -22,32 +23,32 @@ html, body {
 @import '../../sections/Home/style.scss';
 
 section {
-    padding: 4rem;
-    h1 {
-        color: #fff;
-        font-size: 4rem;
-        font-weight: 800;
-    }
+  padding: 4rem;
+  h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 800;
+  }
 }
 
 .primary-btn {
-    text-decoration: none;
-    color: unset;
-    border-radius: 8px;
-    border: 2px solid $lightorange;
-    padding: 5px 15px;
-    font-size: 1.5rem;
-    transition: 300ms ease-out;
-    &:hover {
-        background-color: $lightorange;
-    }
+  text-decoration: none;
+  color: unset;
+  border-radius: 8px;
+  border: 2px solid $lightorange;
+  padding: 5px 15px;
+  font-size: 1.5rem;
+  transition: 300ms ease-out;
+  &:hover {
+    background-color: $lightorange;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    section {
-        padding: 2rem;
-        h1 {
-            font-size: 2rem;
-        }
+  section {
+    padding: 2rem;
+    h1 {
+      font-size: 2rem;
     }
+  }
 }
