@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded'
+
 function Navbar() {
+  const [openMenu, setOpenMenu] = useState(false)
+  console.log(openMenu)
+
   return (
     <div className='navbar'>
       <div className='navbar__logo'>
@@ -9,7 +14,23 @@ function Navbar() {
           FC
         </Link>
       </div>
-      <div className='navbar__links'>
+      <MenuRoundedIcon
+        style={{
+          fontSize: '40px',
+          zIndex: 1,
+          cursor: 'pointer',
+        }}
+        onClick={() => {
+          setOpenMenu(!openMenu)
+        }}
+      />
+      <div
+        className={openMenu ? 'overlay active' : 'overlay'}
+        onClick={() => {
+          setOpenMenu(false)
+        }}
+      ></div>
+      <div className={openMenu ? 'navbar__links active' : 'navbar__links'}>
         <Link
           to='projects'
           className='navbar__main-link'
@@ -18,6 +39,9 @@ function Navbar() {
           smooth={true}
           offset={-90}
           duration={500}
+          onClick={() => {
+            setOpenMenu(false)
+          }}
         >
           Projects
         </Link>
@@ -29,6 +53,9 @@ function Navbar() {
           smooth={true}
           offset={-90}
           duration={500}
+          onClick={() => {
+            setOpenMenu(false)
+          }}
         >
           Skills
         </Link>
@@ -40,6 +67,9 @@ function Navbar() {
           smooth={true}
           offset={-90}
           duration={500}
+          onClick={() => {
+            setOpenMenu(false)
+          }}
         >
           Contact
         </Link>
@@ -51,6 +81,9 @@ function Navbar() {
           smooth={true}
           offset={-90}
           duration={500}
+          onClick={() => {
+            setOpenMenu(false)
+          }}
         >
           About
         </Link>
