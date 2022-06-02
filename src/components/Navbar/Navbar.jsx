@@ -16,6 +16,7 @@ function Navbar() {
       </div>
       <MenuRoundedIcon
         style={{
+          display: 'none',
           fontSize: '40px',
           zIndex: 1,
           cursor: 'pointer',

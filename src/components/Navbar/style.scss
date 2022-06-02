@@ -95,6 +95,9 @@
   }
   // Low Resolution Tablets
   @media screen and (max-width: 800px) {
+    .css-i4bv87-MuiSvgIcon-root {
+      display: block !important;
+    }
     .navbar__links {
       position: fixed;
       top: 0;

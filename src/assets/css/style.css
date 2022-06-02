@@ -792,6 +792,9 @@ header .header__presentation .header__presentation-contact-btns svg:hover {
 }
 
 @media screen and (max-width: 800px) {
+  .navbar .css-i4bv87-MuiSvgIcon-root {
+    display: block !important;
+  }
   .navbar .navbar__links {
     position: fixed;
     top: 0;
