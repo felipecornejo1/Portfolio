@@ -4,6 +4,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './assets/css/style.css'
 import { Home } from './sections/index'
+import { Notifications } from './components/index'
 
 // Roboto Font
 import '@fontsource/roboto/300.css'
@@ -17,6 +18,8 @@ function App() {
   }, [])
   return (
     <div className='App'>
+      <Notifications />
+
       <Routes>
         <Route exact path='/' element={<Home />} />
       </Routes>

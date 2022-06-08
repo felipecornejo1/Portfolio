@@ -592,7 +592,8 @@ header .header__presentation .header__presentation-contact-btns svg:hover {
   padding: 3rem;
 }
 
-#contact form input, #contact form textarea {
+#contact form input,
+#contact form textarea {
   background-color: #170022;
   height: 70px;
   width: 100%;
@@ -603,7 +604,11 @@ header .header__presentation .header__presentation-contact-btns svg:hover {
   font-size: 1.2rem;
 }
 
-#contact form input:-webkit-autofill, #contact form input:-webkit-autofill:hover, #contact form input:-webkit-autofill:focus, #contact form input:-webkit-autofill:active, #contact form textarea:-webkit-autofill, #contact form textarea:-webkit-autofill:hover, #contact form textarea:-webkit-autofill:focus, #contact form textarea:-webkit-autofill:active {
+#contact form input:-webkit-autofill, #contact form input:-webkit-autofill:hover, #contact form input:-webkit-autofill:focus, #contact form input:-webkit-autofill:active,
+#contact form textarea:-webkit-autofill,
+#contact form textarea:-webkit-autofill:hover,
+#contact form textarea:-webkit-autofill:focus,
+#contact form textarea:-webkit-autofill:active {
   background-color: black !important;
 }
 
@@ -613,7 +618,7 @@ header .header__presentation .header__presentation-contact-btns svg:hover {
   max-width: 100%;
 }
 
-#contact form button {
+#contact form .contact__submit-btn {
   background: none;
   outline: none;
   border: none;
@@ -633,7 +638,7 @@ header .header__presentation .header__presentation-contact-btns svg:hover {
   transition: 200ms;
 }
 
-#contact form button:hover {
+#contact form .contact__submit-btn:hover {
   background-color: #7b2cbf;
 }
 
@@ -651,6 +656,14 @@ header .header__presentation .header__presentation-contact-btns svg:hover {
   -webkit-box-shadow: 0 0 0px 1000px #170022 inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+#contact form .contact__notification {
+  margin: 10px;
+}
+
+#contact form .hide {
+  display: none;
 }
 
 .navbar {

@@ -1,62 +1,69 @@
 #contact {
-    background-color: $darkpurple;
-    form {
-        @include flexCenter(column);
-        background-color: rgba($color: $darkestpurple, $alpha: 0.5);
-        width: 80vw;
-        max-width: 700px;
-        margin: 50px auto;
-        border-radius: 16px;
-        padding: 3rem;
-        input, textarea {
-            background-color: $darkestpurple;
-            height: 70px;
-            width: 100%;
-            margin: 1rem;
-            border: none;
-            padding: 2rem;
-            color: #fff;
-            font-size: 1.2rem;
-            &:-webkit-autofill,
-            &:-webkit-autofill:hover, 
-            &:-webkit-autofill:focus, 
-            &:-webkit-autofill:active{
-                background-color: black !important;
-            }
-        }
-        textarea {
-            height: 200px;
-            min-width: 100%;
-            max-width: 100%;
-        }
-        button {
-            @include noFormatBtn();
-            align-self: flex-end;
-            width: fit-content;
-            text-align: center;
-            padding: 10px 50px;
-            font-size: 1.2rem;
-            background-color: $darkestpurple;
-            color: #fff;
-            border-radius: 8px;
-            transition: 200ms;
-            &:hover {
-                background-color: $purple;
-            }
-        }
-        input:-webkit-autofill,
-        input:-webkit-autofill:hover, 
-        input:-webkit-autofill:focus,
-        textarea:-webkit-autofill,
-        textarea:-webkit-autofill:hover,
-        textarea:-webkit-autofill:focus,
-        select:-webkit-autofill,
-        select:-webkit-autofill:hover,
-        select:-webkit-autofill:focus {
-            -webkit-text-fill-color: #fff;
-            box-shadow: 0 0 0px 1000px $darkestpurple inset;
-            -webkit-box-shadow: 0 0 0px 1000px $darkestpurple inset;
-            transition: background-color 5000s ease-in-out 0s;
-        }
+  background-color: $darkpurple;
+  form {
+    @include flexCenter(column);
+    background-color: rgba($color: $darkestpurple, $alpha: 0.5);
+    width: 80vw;
+    max-width: 700px;
+    margin: 50px auto;
+    border-radius: 16px;
+    padding: 3rem;
+    input,
+    textarea {
+      background-color: $darkestpurple;
+      height: 70px;
+      width: 100%;
+      margin: 1rem;
+      border: none;
+      padding: 2rem;
+      color: #fff;
+      font-size: 1.2rem;
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        background-color: black !important;
+      }
     }
+    textarea {
+      height: 200px;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .contact__submit-btn {
+      @include noFormatBtn();
+      align-self: flex-end;
+      width: fit-content;
+      text-align: center;
+      padding: 10px 50px;
+      font-size: 1.2rem;
+      background-color: $darkestpurple;
+      color: #fff;
+      border-radius: 8px;
+      transition: 200ms;
+      &:hover {
+        background-color: $purple;
+      }
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      -webkit-text-fill-color: #fff;
+      box-shadow: 0 0 0px 1000px $darkestpurple inset;
+      -webkit-box-shadow: 0 0 0px 1000px $darkestpurple inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+    .contact__notification {
+      margin: 10px;
+    }
+    .hide {
+      display: none;
+    }
+  }
 }
